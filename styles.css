@@ -1,7 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+  --font-family: "Inter", sans-serif;
+  --font-size-14: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--font-size-14);
+  font-family: var(--font-family);
+}
+
+main {
+  background-color: var(--grey-900);
+  max-width: 102.8571rem;
+  margin: 0 auto;
+  height: calc(100vh - 12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: var(--grey-800);
+  border-radius: 10px;
+  width: 64%;
+  min-width: 19rem;
+  text-align: center;
+  padding: 1.8rem;
+}
+
+.card img {
+  border-radius: 50%;
+  height: 87.5px;
+  width: 87.5px;
+}
+
+.card__name {
+  color: var(--white);
+  font-size: 1.825rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.card__location {
+  color: var(--green);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.card__bio {
+  color: var(--white);
+  font-weight: 400;
+  margin-top: 2.1rem;
+}
+
+button {
+  border: none;
+  width: 100%;
+  color: var(--white);
+  background: var(--grey-700);
+  padding: 1rem 0;
+  font-size: 14.5px;
+  border-radius: 7.5px;
+  font-weight: 700;
+  margin: 1.2rem 0 0 0;
+}
+
+button:hover {
+  background: var(--green);
+  color: var(--grey-900);
+  cursor: pointer;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 40rem) {
+  .card {
+    width: 26.5%;
+    min-width: 27rem;
+    padding: 2.9rem 2.8rem;
+  }
 }
